@@ -1,0 +1,11 @@
+Linked lists are dynamic linear data structures where the elements are linked using pointers. 
+Each element is a seperate object.
+They allow you to easily extend or reduce elements in order to better fit the data.
+Linked Lists are helpful when you have to deal with an unknown number of objects.
+
+
+ADVANTAGES:
+
+
+
+DISADVANTAGES:
