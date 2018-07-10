@@ -113,7 +113,7 @@ class LinkedList<T>
 		}
 	}
 
-	public T removeFirstElement()
+	public void removeFirstElement()
 	{
 		if(listSize == 0)
 		{
@@ -123,7 +123,6 @@ class LinkedList<T>
 		T elementToRemove = head.data;
 		head = head.next;
 		listSize--;
-
 	}
 
 	public void printList()

@@ -11,7 +11,7 @@ public class Time {
             s = sec;
         }
         else
-            System.out.println("Illegal!")
+            System.out.println("Illegal!");
     }
 
     public void showSecs(boolean show) {
