@@ -1,6 +1,20 @@
+import java.util.*;
+
 public class TimeDemo {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
+		Time t = new Time();
+
+		Calendar c = Calendar.getInstance();
+		t.set(c.get(Calendar.HOUR_OF_DAY),
+			c.get(Calendar.MINUTE),
+			c.get(Calendar.SECOND));
+
+		System.out.println("The time is: " + t.toString());
+		
+	}
+
+    public static void oldMain(String[] args) {
 
         Time t1 = new Time();
         Time t2 = new Time();
@@ -20,5 +34,19 @@ public class TimeDemo {
 
         System.out.println(s1);
         System.out.println(s2);
+
+        tickBoth(t1,t2);
+
+        String s3 = t1.toString();
+        String s4 = t2.toString();
+
+        System.out.println(s3);
+        System.out.println(s4);
+
+    }
+
+    static void tickBoth(Time x, Time y) {
+    	x.tick();
+    	y.tick();
     }
 }
